@@ -144,6 +144,12 @@ const seriesProjectionX = chartProjectionX
   })
   .setName("Projection (X)");
 
+// Align charts nicely.
+chartSpectrogram.getDefaultAxisY().setThickness(50)
+chartProjectionX.getDefaultAxisY().setThickness(50)
+chartSpectrogram.getDefaultAxisX().setThickness(25)
+chartProjectionY.getDefaultAxisX().setThickness(25)
+
 // Generate data.
 createSpectrumDataGenerator()
   .setNumberOfSamples(spectrogramColumns)
