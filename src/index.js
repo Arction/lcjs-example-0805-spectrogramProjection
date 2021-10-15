@@ -15,6 +15,7 @@ const {
   LegendBoxBuilders,
   ColorHSV,
   translatePoint,
+  synchronizeAxisIntervals,
   Themes,
 } = lcjs;
 
@@ -91,12 +92,10 @@ chartProjectionY
   .getDefaultAxisY()
   .setScrollStrategy(undefined)
   .setMouseInteractions(false);
+
 // Sync projection Axis with spectogram chart projected axis.
-chartSpectrogram
-  .getDefaultAxisY()
-  .onScaleChange((start, end) =>
-    chartProjectionY.getDefaultAxisY().setInterval(start, end, false, true)
-  );
+synchronizeAxisIntervals(chartSpectrogram.getDefaultAxisY(),  chartProjectionY.getDefaultAxisY())
+
 chartProjectionY
   .getDefaultAxisX()
   .setScrollStrategy(AxisScrollStrategies.expansion)
@@ -124,12 +123,10 @@ chartProjectionX
   .getDefaultAxisX()
   .setScrollStrategy(undefined)
   .setMouseInteractions(false);
+  
 // Sync projection Axis with spectogram chart projected axis.
-chartSpectrogram
-  .getDefaultAxisX()
-  .onScaleChange((start, end) =>
-    chartProjectionX.getDefaultAxisX().setInterval(start, end, false, true)
-  );
+synchronizeAxisIntervals(chartSpectrogram.getDefaultAxisX(),  chartProjectionX.getDefaultAxisX())
+
 chartProjectionX
   .getDefaultAxisY()
   .setScrollStrategy(AxisScrollStrategies.expansion)
