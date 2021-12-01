@@ -62,15 +62,15 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/dashboard.html
-[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/chartxy.html
-[Heatmap Grid Series Intensity]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/heatmapgridseriesintensityvalues.html
-[Line Series]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/lineseries.html
-[Axis scroll strategies]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/globals.html#axisscrollstrategies
-[Paletted Fill]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/palettedfill.html
-[LUT]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/lut.html
-[Empty line style]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/globals.html#emptyline
-[Legend Box]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/chartxy.html#addlegendbox
-[Legend Box builders]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/globals.html#legendboxbuilders
-[Translate point]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/globals.html#translatepoint
+[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/dashboard.html
+[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/chartxy.html
+[Heatmap Grid Series Intensity]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/heatmapgridseriesintensityvalues.html
+[Line Series]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/lineseries.html
+[Axis scroll strategies]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/globals.html#axisscrollstrategies
+[Paletted Fill]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/palettedfill.html
+[LUT]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/lut.html
+[Empty line style]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/globals.html#emptyline
+[Legend Box]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/chartxy.html#addlegendbox
+[Legend Box builders]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/globals.html#legendboxbuilders
+[Translate point]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/globals.html#translatepoint
 
