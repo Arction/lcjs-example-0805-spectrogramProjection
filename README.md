@@ -1,6 +1,6 @@
 # JavaScript Spectrogram XY-Projection Chart
 
-![JavaScript Spectrogram XY-Projection Chart](spectrogramProjection.png)
+![JavaScript Spectrogram XY-Projection Chart](spectrogramProjection-darkGold.png)
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
@@ -8,13 +8,13 @@ LightningChart JS is entirely GPU accelerated and performance optimized charting
 
 The demo can be used as an example or a seed project. Local execution requires the following steps:
 
-- Make sure that relevant version of [Node.js](https://nodejs.org/en/download/) is installed
-- Open the project folder in a terminal:
+-   Make sure that relevant version of [Node.js](https://nodejs.org/en/download/) is installed
+-   Open the project folder in a terminal:
 
-        npm install              # fetches dependencies
-        npm start                # builds an application and starts the development server
+          npm install              # fetches dependencies
+          npm start                # builds an application and starts the development server
 
-- The application is available at *http://localhost:8080* in your browser, webpack-dev-server provides hot reload functionality.
+-   The application is available at _http://localhost:8080_ in your browser, webpack-dev-server provides hot reload functionality.
 
 
 ## Description
@@ -45,32 +45,32 @@ The spectrogram chart contains 1024 x 1024 = ~1 million data points.
 
 If you notice an error in the example code, please open an issue on [GitHub][0] repository of the entire example.
 
-Official [API documentation][1] can be found on [Arction][2] website.
+Official [API documentation][1] can be found on [LightningChart][2] website.
 
 If the docs and other materials do not solve your problem as well as implementation help is needed, ask on [StackOverflow][3] (tagged lightningchart).
 
-If you think you found a bug in the LightningChart JavaScript library, please contact support@arction.com.
+If you think you found a bug in the LightningChart JavaScript library, please contact support@lightningchart.com.
 
-Direct developer email support can be purchased through a [Support Plan][4] or by contacting sales@arction.com.
+Direct developer email support can be purchased through a [Support Plan][4] or by contacting sales@lightningchart.com.
 
 [0]: https://github.com/Arction/
-[1]: https://www.arction.com/lightningchart-js-api-documentation/
-[2]: https://www.arction.com
+[1]: https://lightningchart.com/lightningchart-js-api-documentation/
+[2]: https://lightningchart.com
 [3]: https://stackoverflow.com/questions/tagged/lightningchart
-[4]: https://www.arction.com/support-services/
+[4]: https://lightningchart.com/support-services/
 
-© Arction Ltd 2009-2020. All rights reserved.
+© LightningChart Ltd 2009-2022. All rights reserved.
 
 
-[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/dashboard.html
-[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/chartxy.html
-[Heatmap Grid Series Intensity]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/heatmapgridseriesintensityvalues.html
-[Line Series]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/lineseries.html
-[Axis scroll strategies]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#axisscrollstrategies
-[Paletted Fill]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/palettedfill.html
-[LUT]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/lut.html
-[Empty line style]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#emptyline
-[Legend Box]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/chartxy.html#addlegendbox
-[Legend Box builders]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#legendboxbuilders
-[Translate point]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#translatepoint
+[Dashboard]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/Dashboard.html
+[XY cartesian chart]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/ChartXY.html
+[Heatmap Grid Series Intensity]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/HeatmapGridSeriesIntensityValues.html
+[Line Series]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/LineSeries.html
+[Axis scroll strategies]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/variables/AxisScrollStrategies.html
+[Paletted Fill]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/PalettedFill.html
+[LUT]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/LUT.html
+[Empty line style]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/variables/emptyLine.html
+[Legend Box]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/Chart.html#addLegendBox
+[Legend Box builders]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/variables/LegendBoxBuilders.html
+[Translate point]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/functions/translatePoint.html
 
