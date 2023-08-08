@@ -13,7 +13,6 @@ const {
     emptyLine,
     AxisScrollStrategies,
     LegendBoxBuilders,
-    translatePoint,
     synchronizeAxisIntervals,
     regularColorSteps,
     Themes,
@@ -180,11 +179,7 @@ createSpectrumDataGenerator()
         // Add custom interaction when mouse is hovered over spectrogram chart.
         chartSpectrogram.onSeriesBackgroundMouseMove((_, event) => {
             // Solve mouse location on Axis.
-            const locationAxis = translatePoint(
-                chartSpectrogram.engine.clientLocation2Engine(event.clientX, event.clientY),
-                chartSpectrogram.engine.scale,
-                seriesSpectrogram.scale,
-            )
+            const locationAxis = chartSpectrogram.translateCoordinate(event, chartSpectrogram.coordsAxis)
             showProjection(locationAxis.x, locationAxis.y)
         })
 
