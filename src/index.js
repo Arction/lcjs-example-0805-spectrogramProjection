@@ -25,6 +25,7 @@ const spectrogramRows = 1024
 
 // Create charts and series.
 
+// NOTE: Using `Dashboard` is no longer recommended for new applications. Find latest recommendations here: https://lightningchart.com/js-charts/docs/basic-topics/grouping-charts/
 const dashboard = lightningChart()
     .Dashboard({
         // theme: Themes.darkGold,
