@@ -2,7 +2,7 @@
  * LightningChartJS example for Chart with 2D spectrogram + dynamic projections on mouse interaction.
  */
 // Import LightningChartJS
-const lcjs = require('@arction/lcjs')
+const lcjs = require('@lightningchart/lcjs')
 
 // Extract required parts from LightningChartJS.
 const {
@@ -18,7 +18,7 @@ const {
     Themes,
 } = lcjs
 
-const { createSpectrumDataGenerator } = require('@arction/xydata')
+const { createSpectrumDataGenerator } = require('@lightningchart/xydata')
 
 const spectrogramColumns = 1024
 const spectrogramRows = 1024
@@ -102,7 +102,6 @@ const seriesProjectionY = chartProjectionY
         },
     })
     .setName('Projection (Y)')
-    .setCursorSolveBasis('nearest-y')
 
 const chartProjectionX = dashboard
     .createChartXY({
