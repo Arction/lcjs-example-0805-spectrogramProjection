@@ -52,7 +52,7 @@ const seriesSpectrogram = chartSpectrogram
         columns: spectrogramColumns,
         rows: spectrogramRows,
     })
-    .setMouseInteractions(false)
+    .setPointerEvents(false)
     .setWireframeStyle(emptyLine)
     .setFillStyle(
         new PalettedFill({
@@ -81,27 +81,21 @@ const chartProjectionY = dashboard
     .setTitleFillStyle(emptyFill)
     // NOTE: Hardcoded alignment with Spectrogram chart.
     .setPadding({ top: 44 })
-    .setMouseInteractions(false)
+    .setUserInteractions(undefined)
 
-chartProjectionY.getDefaultAxisY().setScrollStrategy(undefined).setMouseInteractions(false)
+chartProjectionY.getDefaultAxisY().setScrollStrategy(undefined)
 
 // Sync projection Axis with spectogram chart projected axis.
 synchronizeAxisIntervals(chartSpectrogram.getDefaultAxisY(), chartProjectionY.getDefaultAxisY())
 
-chartProjectionY
-    .getDefaultAxisX()
-    .setScrollStrategy(AxisScrollStrategies.expansion)
-    .setInterval({ start: 0, end: 1, stopAxisAfter: false })
-    .setMouseInteractions(false)
+chartProjectionY.getDefaultAxisX().setScrollStrategy(AxisScrollStrategies.expansion).setInterval({ start: 0, end: 1, stopAxisAfter: false })
 
 const seriesProjectionY = chartProjectionY
-    .addLineSeries({
-        dataPattern: {
-            pattern: 'ProgressiveY',
-            regularProgressiveStep: true,
-        },
+    .addPointLineAreaSeries({
+        dataPattern: 'ProgressiveY',
     })
     .setName('Projection (Y)')
+    .setAreaFillStyle(emptyFill)
 
 const chartProjectionX = dashboard
     .createChartXY({
@@ -109,25 +103,19 @@ const chartProjectionX = dashboard
         rowIndex: 1,
     })
     .setTitleFillStyle(emptyFill)
-    .setMouseInteractions(false)
-chartProjectionX.getDefaultAxisX().setScrollStrategy(undefined).setMouseInteractions(false)
+    .setUserInteractions(undefined)
+chartProjectionX.getDefaultAxisX().setScrollStrategy(undefined)
 
 // Sync projection Axis with spectogram chart projected axis.
 synchronizeAxisIntervals(chartSpectrogram.getDefaultAxisX(), chartProjectionX.getDefaultAxisX())
 
-chartProjectionX
-    .getDefaultAxisY()
-    .setScrollStrategy(AxisScrollStrategies.expansion)
-    .setInterval({ start: 0, end: 1, stopAxisAfter: false })
-    .setMouseInteractions(false)
+chartProjectionX.getDefaultAxisY().setScrollStrategy(AxisScrollStrategies.expansion).setInterval({ start: 0, end: 1, stopAxisAfter: false })
 const seriesProjectionX = chartProjectionX
-    .addLineSeries({
-        dataPattern: {
-            pattern: 'ProgressiveX',
-            regularProgressiveStep: true,
-        },
+    .addPointLineAreaSeries({
+        dataPattern: 'ProgressiveX',
     })
     .setName('Projection (X)')
+    .setAreaFillStyle(emptyFill)
 
 // Align charts nicely.
 chartSpectrogram.getDefaultAxisY().setThickness(50)
@@ -179,7 +167,7 @@ createSpectrumDataGenerator()
         }
 
         // Add custom interaction when mouse is hovered over spectrogram chart.
-        chartSpectrogram.onSeriesBackgroundMouseMove((_, event) => {
+        chartSpectrogram.seriesBackground.addEventListener('pointermove', (event) => {
             // Solve mouse location on Axis.
             const locationAxis = chartSpectrogram.translateCoordinate(event, chartSpectrogram.coordsAxis)
             showProjection(locationAxis.x, locationAxis.y)
